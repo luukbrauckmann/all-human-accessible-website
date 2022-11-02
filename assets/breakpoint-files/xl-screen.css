@@ -1,4 +1,8 @@
 @media (min-width: 1200px) {
+	#main-logo {
+		height: 45px;
+	}
+
 	body > footer {
 		display: none;
 	}
