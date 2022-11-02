@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/sm-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/md-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/lg-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/xl-screen.css">
+	<link rel="stylesheet" href="./assets/breakpoint-files/xxl-screen.css">
+
+	<!-- External scripts -->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4772rvRhPiMHXGIC-1HS_FLTbKoE_wUc&v=weekly&language=nl&region=NL"
+		defer></script>
+
+	<!-- Local scripts -->
+	<script src="scripts/scripts.js"></script>
+	<script src="scripts/sidebar.scripts.js"></script>
+	<script src="scripts/maps.scripts.js"></script>
+
+	<title>Coding the Curbs</title>
+</head>
+
+<body>
+	<header>
+		<img
+			src="https://static.wixstatic.com/media/21dd0d_050319353c314f00b14e0fc7970173d8~mv2.png/v1/fill/w_163,h_56,al_c,q_95,enc_auto/CTC_Logo_Wit.png"
+			alt="Logo van Coding The Curbs" height="31">
+	</header>
+
+	<main>
+		<!-- Sidebar with list of locations  -->
+		<article id="sidebar" tabindex="0">
+			<header>
+				<div>
+					<h1 aria-label="Lijst met Smart Zones">Smart Zones</h1>
+					<small id="item-count"></small>
+				</div>
+				<small>Klik op een smart zone om meer informatie te zien.</small>
+			</header>
+			<ul id="zone-list"></ul>
+		</article>
+
+		<!-- Google maps API -->
+		<article id="kaart" tabindex="0">
+			<header>
+				<h1 aria-label="Kaart met Smart Zones">Kaart</h1>
+				<small>Klik op een markerering om meer informatie te zien.</small>
+			</header>
+			<div id="map"></div>
+		</article>
+	</main>
+
+	<footer>
+		<!-- Button to toggle the sidebar -->
+		<button id="sidebar-button" class="primary" onclick="toggleSidebar()">Lijst weergeven</button>
+	</footer>
+</body>
+
+</html>

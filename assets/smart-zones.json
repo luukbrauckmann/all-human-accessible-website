@@ -1,0 +1,130 @@
+[
+	{
+		"smartzoneId": 1,
+		"name": "Tijn ",
+		"town": "Utrecht",
+		"location": "Twijnstraat 26",
+		"coordinates": {
+			"lat": 52.0829809,
+			"lng": 5.1235411
+		},
+		"function": "Parkeren ",
+		"time": "07:00 - 17:00",
+		"size": "1,5 plek",
+		"utilization": "48%",
+		"description": "Eerste Smart Zone in Nederland ",
+		"image": "https://raw.githubusercontent.com/DphnZwp/keep-users-in-control-coding-the-curbs/main/assets/Utrecht_01.jpg"
+	},
+	{
+		"smartzoneId": 2,
+		"name": "Sarah",
+		"town": "Utrecht",
+		"location": "Twijnstraat 22",
+		"coordinates": {
+			"lat": 52.08318,
+			"lng": 5.1235214
+		},
+		"function": "Laden en lossen",
+		"time": "07:00 - 13:00",
+		"size": "1,5 plek",
+		"utilization": "90%",
+		"description": "",
+		"image": "https://raw.githubusercontent.com/DphnZwp/keep-users-in-control-coding-the-curbs/main/assets/Utrecht_02.jpg"
+	},
+	{
+		"smartzoneId": 3,
+		"name": "Manon",
+		"town": "Schiedam",
+		"location": "Lange Haven 56",
+		"coordinates": {
+			"lat": 51.9147557,
+			"lng": 4.3982383
+		},
+		"function": "Laden en lossen",
+		"time": "07:00 - 13:00",
+		"size": "1 plek",
+		"utilization": "32%",
+		"description": "",
+		"image": "https://github.com/DphnZwp/keep-users-in-control-coding-the-curbs/blob/main/assets/Schiedam_01.jpg?raw=true"
+	},
+	{
+		"smartzoneId": 4,
+		"name": " Ahmed",
+		"town": "Schiedam",
+		"location": "Lange Haven 72",
+		"coordinates": {
+			"lat": 51.9151051,
+			"lng": 4.3975129
+		},
+		"function": "Laden en lossen Recreatie",
+		"time": "07:00 - 17:00",
+		"size": "1 plek",
+		"utilization": "72%",
+		"description": "",
+		"image": "https://github.com/DphnZwp/keep-users-in-control-coding-the-curbs/blob/main/assets/Schiedam_02.jpg?raw=true"
+	},
+	{
+		"smartzoneId": 5,
+		"name": "Olivia",
+		"town": "Amsterdam",
+		"location": "Overtoom 450",
+		"coordinates": {
+			"lat": 52.3597303,
+			"lng": 4.8623646
+		},
+		"function": "Laden en lossen Parkeren Deelmobiliteit",
+		"time": "06:00 - 24:00",
+		"size": "2 plek",
+		"utilization": "60%",
+		"description": "Voor de Albert Heijn",
+		"image": "https://github.com/DphnZwp/keep-users-in-control-coding-the-curbs/blob/main/assets/Amsterdam_01.jpg?raw=true"
+	},
+	{
+		"smartzoneId": 6,
+		"name": "Karel",
+		"town": "Amsterdam",
+		"location": "Kinkerstraat 272",
+		"coordinates": {
+			"lat": 52.365379,
+			"lng": 4.8644729
+		},
+		"function": "Laden en lossen Parkeren Deelmobiliteit",
+		"time": "06:00 - 24:00",
+		"size": "1 plek",
+		"utilization": "82%",
+		"description": "Voor de Praxis",
+		"image": "https://github.com/DphnZwp/keep-users-in-control-coding-the-curbs/blob/main/assets/Amsterdam_02.jpg?raw=true"
+	},
+	{
+		"smartzoneId": 7,
+		"name": "Wafa",
+		"town": "Rotterdam",
+		"location": "West-kruiskade 93",
+		"coordinates": {
+			"lat": 51.9200517,
+			"lng": 4.4660195
+		},
+		"function": "Deelmobiliteit",
+		"time": "17:00 - 07:00",
+		"size": "1 plek",
+		"utilization": "32%",
+		"description": "Voor Tanoli",
+		"image": "https://github.com/DphnZwp/keep-users-in-control-coding-the-curbs/blob/main/assets/Rotterdam_01.jpg?raw=true"
+	},
+	{
+		"smartzoneId": 8,
+		"name": "Wicher",
+		"town": "Rotterdam",
+		"location": "Witte de Withstraat 32",
+		"coordinates": {
+			"lat": 51.91585159301758,
+			"lng": 4.478142261505127
+		},
+		"function": "Deelmobiliteit",
+		"time": "17:00 - 07:00",
+		"size": "1 plek",
+		"utilization": "45%",
+		"description": "Aan het einde op de hoek",
+		"image": "https://github.com/DphnZwp/keep-users-in-control-coding-the-curbs/blob/main/assets/Rotterdam_02.jpg?raw=true"
+	}
+]

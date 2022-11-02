@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+	--spacing: .5rem;
+	--border-radius: 5px;
+
+	--primary-color: #4f52c9;
+	--secondary-color: #ffffff;
+	--accent-color: #59ffec;
+
+	--heading-font: Rajdhani, san-serif;
+	--regualar-font: Roboto, san-serif;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+	font-family: var(--regualar-font);
+}
+
+body,
+article {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+}
+
+body > header,
+body > footer,
+article > header,
+article > footer {
+	flex: 0 1 auto;
+}
+
+body > *,
+article > * {
+	flex: 1 1 auto;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1em;
+	font-family: var(--heading-font);
+}
+
+button.primary,
+button.secondary,
+button.accent {
+	padding: var(--spacing) calc(var(--spacing) * 2);
+	border: 2px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	font-family: var(--heading-font);
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+button.primary {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	border-color: var(--primary-color);
+}
+
+button.primary:hover {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+button.secondary {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border-color: var(--secondary-color);
+}
+
+button.secondary:hover {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	border-color: var(--primary-color);
+}
+
+button.accent {
+	background-color: var(--accent-color);
+	color: #09102e;
+	border-color: var(--accent-color);
+}
+
+button.accent:hover {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border-color: var(--secondary-color);
+}
+
+
+body > header {
+	background-color: var(--primary-color);
+	padding: var(--spacing);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5),0 0 5px rgba(0,0,0,.5);
+	z-index: 2;
+}
+
+body > footer {
+	background-color: var(--primary-color);
+	padding: var(--spacing);
+}
+
+body > footer > button {
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+#sidebar {
+	height: 0%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	z-index: 1;
+	transition: all .2s ease;
+	visibility: hidden;
+}
+
+#sidebar.visible {
+	height: 100%;
+	visibility: visible;
+}
+
+#sidebar > header > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#sidebar > ul {
+	background-color: #fafafa;
+	list-style: none;
+	padding: var(--spacing);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+	overflow-y: scroll;
+}
+#sidebar > ul > li > button {
+	text-align: left;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+#sidebar > ul > li > button:hover {
+	color: var(--primary-color);
+}
+#sidebar > ul > li > button > img {
+	width: 100%;
+}
+#sidebar > ul > li > button > div {
+	padding: var(--spacing);
+}
+
+#kaart {
+	flex: 1 1 0%;
+}
+
+#kaart.hidden {
+	visibility: hidden;
+}
+
+#sidebar > header,
+#kaart > header {
+	padding: var(--spacing);
+	background-color: #fafafa;
+}
