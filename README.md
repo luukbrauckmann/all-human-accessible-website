@@ -34,8 +34,12 @@ De website is gebouwd met HTML, CSS & JavaScript.
 
 ## Bronnen
 
+
+
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
+- [How to](https://web.dev/how-to-review/)
+- [a11y](https://www.a11yproject.com/checklist/)
 
 ## Licentie
 
