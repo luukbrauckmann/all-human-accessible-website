@@ -20,15 +20,13 @@ User stories:
 ![image](https://user-images.githubusercontent.com/47314813/199541968-d27a86c4-d755-48b3-a16c-c53631d78781.png)
 ![image](https://user-images.githubusercontent.com/47314813/199542611-b4ae9ef8-b748-49e6-a6df-2fc8faa2fab9.png)
 
-Door op een blokje in de lijst of een marker te klikken selecteer je de Smart Zone en wordt het ingezoomd op de kaart
+Door op een blokje in de lijst of een marker te klikken selecteer je de Smart Zone en wordt het ingezoomd op de kaart. De website is toegankelijk met een screen reader. 
 
 ## Kenmerken
 
 De website is gebouwd met HTML, CSS & JavaScript.
 
 ### HTML
-
-
 
 ### CSS
 
