@@ -144,7 +144,7 @@ body > footer > button {
 #sidebar > ul {
 	background-color: #fafafa;
 	list-style: none;
-	padding: 0 var(--spacing);
+	padding: 0 var(--spacing) var(--spacing);
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing);
