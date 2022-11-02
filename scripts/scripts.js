@@ -12,6 +12,10 @@ async function init() {
 	initMap()
 }
 
+/**
+ * Functie om data te halen door middel van de fetch api
+ * @returns fetch as promise
+ */
 async function getItems() {
 	return fetch('https://raw.githubusercontent.com/luukbrauckmann/coding-the-curbs/main/assets/smart-zones.json')
 		.then((response) => response.json())
@@ -32,7 +36,5 @@ async function getItems() {
 
 	const kaart = document.getElementById('kaart')
 	kaart.classList.toggle('hidden')
-
-	if (sidebar.classList.contains('visible')) sidebar.focus()
 }
 
