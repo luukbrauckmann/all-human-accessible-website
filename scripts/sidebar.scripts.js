@@ -28,7 +28,7 @@ function buildList() {
 		const li = document.createElement('li')
 		li.id = `smart-zone-${item.smartzoneId}`
 		const button = document.createElement('button')
-		button.ariaLabel = `"${item.location}, ${item.town}`
+		button.ariaLabel = `${item.location}, ${item.town}`
 		button.onclick = function () { toggleItem(item) }
 		const html = `
 			<img src="${item.image}" alt="Foto van ${item.location}, ${item.town}">
