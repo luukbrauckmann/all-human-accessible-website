@@ -24,6 +24,8 @@ function placeMarker(item) {
 	const marker = new google.maps.Marker({
     position: item.coordinates,
     map,
+		title: `Markering voor ${item.location}, ${item.town}. Druk op enter om het te selecteren.`,
+		optimized: false,
   })
 	marker.addListener("click", () => selectItem(item))
 	return marker

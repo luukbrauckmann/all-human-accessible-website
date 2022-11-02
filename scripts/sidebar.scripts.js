@@ -10,6 +10,8 @@ function closeSidebar() {
 	sidebar.classList.remove('visible')
 	const sidebarButton = document.getElementById('sidebar-button')
 	sidebarButton.innerText = 'Lijst weergeven'
+	const kaart = document.getElementById('kaart')
+	kaart.classList.remove('hidden')
 }
 
 /**
@@ -23,20 +25,23 @@ function buildList() {
 	itemCountElement.ariaLabel = `De lijst bevat ${items.length} Smart Zones`
 	const listElement = document.getElementById('zone-list')
 	items.forEach((item) => {
+		const li = document.createElement('li')
+		li.id = `smart-zone-${item.smartzoneId}`
+		const button = document.createElement('button')
+		button.ariaLabel = `"${item.location}, ${item.town}`
+		button.onclick = function () { toggleItem(item) }
 		const html = `
-			<li id="smart-zone-${item.smartzoneId}">
-				<button onclick="${function () { toggleItem(item) }}" aria-label="${item.location}, ${item.town}">
-					<img src="${item.image}" alt="Foto van ${item.location}, ${item.town}">
-					<div>
-						<h2>${item.name}</h2>
-						<p>Adres: ${item.location}, ${item.town}</p>
-						<p>Grootte: ${item.size}</p>
-						<p>Beschikbaar: Ja</p>
-					</div>
-				</button>
-			</li>
+			<img src="${item.image}" alt="Foto van ${item.location}, ${item.town}">
+			<div>
+				<h2>${item.name}</h2>
+				<p>Adres: ${item.location}, ${item.town}</p>
+				<p>Grootte: ${item.size}</p>
+				<p>Beschikbaar: Ja</p>
+			</div>
 		`
-		listElement.insertAdjacentHTML('beforeend', html)
+		button.insertAdjacentHTML('beforeend', html)
+		li.appendChild(button)
+		listElement.appendChild(li)
 	})
 }
 
